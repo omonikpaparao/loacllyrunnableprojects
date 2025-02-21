@@ -228,7 +228,8 @@ elif menu == "Certificate Generation and Sending":
             coordinates[column] = {"x": x_coord, "y": y_coord, "font": font_name}
 
     font_name = st.text_input("Font Name", "Times-BoldItalic")
-    output_directory = "C:/Users/exam2/Desktop/phani"
+    #output_directory = "C:/Users/exam2/Desktop/phani"
+    output_directory = st.text_input("Enter the path where to save the genearted certificates in your System(Path Should be in the format (C:/users/Desktop)", "")
     failed_emails = []
 
     if st.button("Generate Certificates and Send Emails"):
